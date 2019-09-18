@@ -1,0 +1,158 @@
+ [
+    {
+      "model": "BMW",
+      "price": 120000,
+      "color": "BLACK",
+      "mileage": 1500,
+      "components": [
+        "ABS",
+        "ALLOY WHEELS"
+      ]
+    },
+    {
+      "model": "MAZDA",
+      "price": 160000,
+      "color": "WHITE",
+      "mileage": 2500,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH"
+      ]
+    },
+    {
+      "model": "PORSHE",
+      "price": 359000,
+      "color": "BLACK",
+      "mileage": 1200,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "RADIO",
+        "FIRE EXTINGUISHER"
+      ]
+    },
+    {
+      "model": "AUDI",
+      "price": 150000,
+      "color": "WHITE",
+      "mileage": 2300,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "RADIO",
+        "GPS"
+      ]
+    },
+    {
+      "model": "BMW",
+      "price": 350000,
+      "color": "BLUE",
+      "mileage": 3000,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "RADIO",
+        "FIRE EXTINGUISHER"
+      ]
+    },
+    {
+      "model": "MERCEDES",
+      "price": 400000,
+      "color": "RED",
+      "mileage": 1300,
+      "components": [
+        "GPS",
+        "BLUETOOTH",
+        "RADIO"
+      ]
+    },
+    {
+      "model": "MAZDA",
+      "price": 125000,
+      "color": "GREEN",
+      "mileage": 2000,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "GPS"
+      ]
+    },
+    {
+      "model": "MERCEDES",
+      "price": 138000,
+      "color": "WHITE",
+      "mileage": 2500,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "RADIO"
+      ]
+    },
+    {
+      "model": "PORSHE",
+      "price": 70000,
+      "color": "GRAY",
+      "mileage": 1200,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH"
+      ]
+    },
+    {
+      "model": "MAZDA",
+      "price": 180000,
+      "color": "YELLOW",
+      "mileage": 2430,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "RADIO",
+        "GPS"
+      ]
+    },
+    {
+      "model": "MERCEDES",
+      "price": 55000,
+      "color": "GRAY",
+      "mileage": 6000,
+      "components": [
+        "AIR CONDITIONING",
+        "FIRE EXTINGUISHER",
+        "RADIO"
+      ]
+    },
+    {
+      "model": "RENAULT",
+      "price": 350000,
+      "color": "GOLD",
+      "mileage": 2360,
+      "components": [
+        "FIRE EXTINGUISHER",
+        "GPS",
+        "RADIO"
+      ]
+    },
+    {
+      "model": "BMW",
+      "price": 450000,
+      "color": "RED",
+      "mileage": 7600,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH",
+        "RADIO",
+        "GPS",
+        "FIRE EXTINGUISHER"
+      ]
+    },
+    {
+      "model": "RENAULT",
+      "price": 78000,
+      "color": "BLUE",
+      "mileage": 1230,
+      "components": [
+        "AIR CONDITIONING",
+        "BLUETOOTH"
+      ]
+    }
+  ]
