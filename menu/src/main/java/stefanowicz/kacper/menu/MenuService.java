@@ -81,7 +81,7 @@ public class MenuService {
     }
 
     private void option2() {
-        double mileage = UserDataService.getDouble("Enter mileage:");
+        BigDecimal mileage = BigDecimal.valueOf(UserDataService.getDouble("Enter mileage:"));
         List<Car> withHigherMileageCars = carsService.getHigherMileage(mileage);
         System.out.println(toJson(withHigherMileageCars));
     }

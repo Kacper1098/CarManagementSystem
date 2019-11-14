@@ -15,10 +15,10 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
-# Generated files
+# Generated stefanowicz.kacper.files
 .idea/**/contentModel.xml
 
-# Sensitive or high-churn files
+# Sensitive or high-churn stefanowicz.kacper.files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
@@ -32,7 +32,7 @@
 .idea/**/libraries
 
 # Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
+# When using Gradle or Maven with auto-import, you should exclude module stefanowicz.kacper.files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
 # .idea/modules.xml
@@ -99,7 +99,7 @@ fabric.properties
 # Log file
 *.log
 
-# BlueJ files
+# BlueJ stefanowicz.kacper.files
 *.ctxt
 
 # Mobile Tools for Java (J2ME)

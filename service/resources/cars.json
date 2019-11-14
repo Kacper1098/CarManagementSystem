@@ -1,0 +1,32 @@
+[
+  {
+    "model": "BMW",
+    "price": 120000,
+    "color": "RED",
+    "mileage": 1500,
+    "components": [
+      "ABS",
+      "ALLOY WHEELS"
+    ]
+  },
+  {
+    "model": "PORSHE",
+    "price": 359000,
+    "color": "BLACK",
+    "mileage": 1200,
+    "components": [
+      "RADIO",
+      "FIRE EXTINGUISHER"
+    ]
+  },
+  {
+    "model": "AUDI",
+    "price": 150000,
+    "color": "GREEN",
+    "mileage": 2300,
+    "components": [
+      "AIR CONDITIONING",
+      "GPS"
+    ]
+  }
+]

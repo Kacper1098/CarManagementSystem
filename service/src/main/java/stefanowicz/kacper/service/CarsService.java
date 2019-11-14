@@ -86,15 +86,15 @@ public class CarsService {
      * @param mileage
      * @return List of cars with higher mileage than value given as argument.
      */
-    public List<Car> getHigherMileage(double mileage)
+    public List<Car> getHigherMileage(BigDecimal mileage)
     {
-        if( mileage <= 0)
+        if( mileage.compareTo(BigDecimal.ZERO) <= 0)
         {
             throw new AppException("Mileage value has to be greater than 0");
         }
         return this.cars
                 .stream()
-                .filter(car -> car.getMileage().doubleValue() > mileage)
+                .filter(car -> car.getMileage().compareTo(mileage) > 0)
                 .collect(Collectors.toList());
     }
 
