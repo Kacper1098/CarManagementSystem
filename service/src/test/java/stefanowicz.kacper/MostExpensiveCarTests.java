@@ -3,6 +3,7 @@ package stefanowicz.kacper;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import stefanowicz.kacper.model.Car;
 import stefanowicz.kacper.model.enums.Color;
@@ -38,7 +39,8 @@ public class MostExpensiveCarTests {
     }
 
     @Test
-    public void find_most_expensive_car(){
+    @DisplayName("Find most expensive car")
+    public void test1(){
         Assertions
                 .assertEquals(carsService.getMostExpensive(), expectedResult);
     }

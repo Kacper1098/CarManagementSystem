@@ -2,6 +2,7 @@ package stefanowicz.kacper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import stefanowicz.kacper.model.Car;
 import stefanowicz.kacper.model.enums.Color;
@@ -53,7 +54,8 @@ public class CarsSortedComponentsTests {
     }
 
     @Test
-    public void return_cars_with_components_sorted_in_natural_order(){
+    @DisplayName("Return cars with components sorted in natural order")
+    public void test1(){
         Assertions
                 .assertEquals(carsService.getCarsSortedComponents(), this.expectedResult);
     }

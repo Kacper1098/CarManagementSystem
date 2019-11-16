@@ -2,6 +2,7 @@ package stefanowicz.kacper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import stefanowicz.kacper.model.enums.Color;
 import stefanowicz.kacper.service.CarsService;
@@ -26,7 +27,8 @@ public class CountByColorTests {
     }
 
     @Test
-    public void count_colors_and_sort_them(){
+    @DisplayName("Count colors and sort them")
+    public void test1(){
         Assertions
                 .assertEquals(carsService.countByColor(), createExpectedResults());
     }

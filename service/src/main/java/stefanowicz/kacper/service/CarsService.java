@@ -88,6 +88,9 @@ public class CarsService {
      */
     public List<Car> getHigherMileage(BigDecimal mileage)
     {
+        if(mileage == null){
+            throw new AppException("Argument cannot be null");
+        }
         if( mileage.compareTo(BigDecimal.ZERO) <= 0)
         {
             throw new AppException("Mileage value has to be greater than 0");
@@ -218,6 +221,9 @@ public class CarsService {
      * @return List of cars in a given price range
      */
     public List<Car> getCarsInPriceRange(BigDecimal from, BigDecimal to) {
+        if(from == null || to == null){
+            throw new AppException("Arguments cannot be null");
+        }
         if(from.compareTo(to) > 0)
         {
             throw new AppException("FromPrice has to bo less than or equal to ToPrice");

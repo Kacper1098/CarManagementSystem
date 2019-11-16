@@ -2,6 +2,7 @@ package stefanowicz.kacper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import stefanowicz.kacper.model.Car;
 import stefanowicz.kacper.model.enums.Color;
@@ -56,7 +57,8 @@ public class MostExpensiveOfModelTests {
     }
 
     @Test
-    public void find_most_expensive_of_each_model(){
+    @DisplayName("Find most expensive car of each model")
+    public void test1(){
         Assertions
                 .assertEquals(carsService.mostExpensiveOfModel(), createExpectedResults());
     }

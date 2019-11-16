@@ -2,6 +2,7 @@ package stefanowicz.kacper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import stefanowicz.kacper.model.Car;
@@ -106,7 +107,8 @@ public class CarsGroupedByComponentsTests {
 
     @ParameterizedTest
     @MethodSource("getMapKeys")
-    public void return_cars_grouped_by_components(String key){
+    @DisplayName("Return cars grouped by components")
+    public void test1(String key){
         var result = carsService.getCarsByComponents();
         Assertions
                 .assertEquals(result.get(key), expectedResult.get(key));

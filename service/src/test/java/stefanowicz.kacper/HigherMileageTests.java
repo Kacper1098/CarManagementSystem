@@ -2,6 +2,7 @@ package stefanowicz.kacper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import stefanowicz.kacper.exception.AppException;
 import stefanowicz.kacper.model.Car;
@@ -21,10 +22,10 @@ public class HigherMileageTests {
         this.carsService = new CarsService("resources/cars.json");
     }
 
-    // TODO co jezeli podasz mileage a takich samochodow nie bedzie
 
     @Test
-    public void throw_exception_when_wrong_mileage(){
+    @DisplayName("Throws when mileage is less than or equal to 0")
+    public void test1(){
          mileage = BigDecimal.valueOf(-2);
 
         Assertions
@@ -33,7 +34,8 @@ public class HigherMileageTests {
     }
 
     @Test
-    public void filter_cars_with_higher_mileage(){
+    @DisplayName("Filter cars with higher mileage than argument")
+    public void test2(){
          mileage = BigDecimal.valueOf(1300);
          Assertions
                  .assertEquals(
@@ -65,5 +67,28 @@ public class HigherMileageTests {
                                          ).build()
                          )
                  );
+    }
+
+    @Test
+    @DisplayName("Return empty list when there are no cars with mileage higher than argument")
+    public void test3(){
+        mileage = BigDecimal.valueOf(2500);
+
+        var result = carsService.getHigherMileage(mileage);
+
+        Assertions
+                .assertTrue(result.isEmpty());
+    }
+
+    @Test
+    @DisplayName("Throws when argument is null")
+    public void test4(){
+        mileage = null;
+
+        Assertions
+                .assertThrows(
+                        AppException.class,
+                        () -> carsService.getHigherMileage(mileage)
+                );
     }
 }

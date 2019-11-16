@@ -1,8 +1,8 @@
 package stefanowicz.kacper;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import stefanowicz.kacper.model.Car;
@@ -149,7 +149,8 @@ public class SortCarTests {
 
     @ParameterizedTest
     @EnumSource(SortBy.class)
-    public void sort_cars_natural_order(SortBy sortBy){
+    @DisplayName("Sort cars in natural order")
+    public void test1(SortBy sortBy){
         Map<SortBy, List<Car>> expectedResults = createExpectedResults();
         Assertions
                 .assertEquals(carsService.sortCar(sortBy, false), expectedResults.get(sortBy));

@@ -2,6 +2,7 @@ package stefanowicz.kacper;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import stefanowicz.kacper.model.PriceMileageStatistics;
 import stefanowicz.kacper.service.CarsService;
@@ -49,7 +50,8 @@ public class PriceMileageStatisticsTests {
     }
 
     @Test
-    public void calculate_price_and_mileage_statistics(){
+    @DisplayName("Calculate price and mileage statistics")
+    public void test1(){
         Assertions
                 .assertEquals(carsService.priceMileageStatistics(), createExpectedResult());
     }
